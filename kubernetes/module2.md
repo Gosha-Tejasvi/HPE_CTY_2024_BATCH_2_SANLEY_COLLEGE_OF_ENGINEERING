@@ -11,8 +11,9 @@ In this module, we will deploy our first application on Kubernetes using `kubect
 
 To deploy an application on Kubernetes, use the following command. Replace `<image>` with the full repository URL if the image is hosted outside Docker Hub.
 
-```copycode
+```bash
 kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+```
 This command deploys the kubernetes-bootcamp application using the specified Docker image gcr.io/google-samples/kubernetes-bootcamp:v1.
 
 Verify Deployment
