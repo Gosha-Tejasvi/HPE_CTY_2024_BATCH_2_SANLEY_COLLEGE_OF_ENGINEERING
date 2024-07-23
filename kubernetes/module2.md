@@ -19,7 +19,8 @@ To deploy an application on Kubernetes using `kubectl`, follow these steps:
 
    ```bash
    kubectl version
-```
+   ```
+   
 This command should display both the client and server versions of kubectl.
 
 Deploy the Application
