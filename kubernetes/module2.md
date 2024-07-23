@@ -19,8 +19,9 @@ To deploy an application on Kubernetes, we use the `kubectl create deployment` c
 
    ```bash
    kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
-  ```
 
+    ```
+ ```
 
 This command deploys the kubernetes-bootcamp application using the specified Docker image gcr.io/google-samples/kubernetes-bootcamp:v1.
 
