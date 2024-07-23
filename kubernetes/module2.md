@@ -20,15 +20,18 @@ To deploy an application on Kubernetes, we use the `kubectl create deployment` c
    ```bash
    kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
  ```
+
+
 This command deploys the kubernetes-bootcamp application using the specified Docker image gcr.io/google-samples/kubernetes-bootcamp:v1.
 
 Verify Deployment
 
 After deploying, verify that the deployment was successful by checking the deployments:
 
-bash
-Copy code
+ ```bash
 kubectl get deployments
+ ```
+
 You should see output confirming the deployment, including the number of replicas running.
 
 Explore Further
@@ -40,10 +43,9 @@ Congratulations! You've successfully deployed your first application on Kubernet
 
 Continue to Module 3: Explore Your App to learn more about interacting with your deployed application and understanding its runtime environment.
 
-vbnet
-Copy code
 
-### Notes:
+
+**Notes**:
 
 - Ensure to replace `<image>` in the deployment command with the actual Docker image repository URL if deploying an image from a different source than Docker Hub.
 - Provide clear and concise instructions for each step to guide users effectively through the deployment process.
