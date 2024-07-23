@@ -45,20 +45,20 @@ Before you begin, ensure you have the following:
 
    Verify Cluster: Check the status of your cluster to ensure it's running:
 
-bash
-Copy code
+```bash
+
 kubectl cluster-info
 This command should display information about your Kubernetes cluster, confirming it's running.
 
 Deploy Applications: Now that your cluster is running, you can deploy containerized applications using kubectl commands. For example, to deploy a sample nginx web server:
 
-bash
-Copy code
+```bash
+
 kubectl create deployment nginx --image=nginx
 Access Applications: Expose your deployed application to access it externally:
 
-bash
-Copy code
+```bash
+
 kubectl expose deployment nginx --port=80 --type=NodePort
 This command creates a service and exposes it to the external world using NodePort.
 
