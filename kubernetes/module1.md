@@ -40,26 +40,30 @@ Before you begin, ensure you have the following:
 
 2. **Start Minikube**: Open your terminal and run the following command to start Minikube:
 
-
+```bash
    minikube start
-
+```
    Verify Cluster: Check the status of your cluster to ensure it's running:
 
 
-
+```bash
 kubectl cluster-info
+```
+
 This command should display information about your Kubernetes cluster, confirming it's running.
 
 Deploy Applications: Now that your cluster is running, you can deploy containerized applications using kubectl commands. For example, to deploy a sample nginx web server:
 
-
-
+```bash
 kubectl create deployment nginx --image=nginx
+```
+
 Access Applications: Expose your deployed application to access it externally:
 
-
-
+```bash
 kubectl expose deployment nginx --port=80 --type=NodePort
+```
+
 This command creates a service and exposes it to the external world using NodePort.
 
 Explore Further: Experiment with scaling your application, updating it, and exploring other Kubernetes features using Minikube.
