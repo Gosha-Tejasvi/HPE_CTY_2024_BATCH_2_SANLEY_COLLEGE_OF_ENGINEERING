@@ -43,4 +43,6 @@ kubectl get deployments
 This command lists all deployments in your Kubernetes cluster, including the kubernetes-bootcamp Deployment.
 
 Conclusion
-Congratulations! You've successfully deployed your first application on Kubernetes using kubectl. Continue to Module 3: Explore Your App to learn more about interacting with your deployed application and understanding its runtime environment.
+Congratulations! You've successfully deployed your first application on Kubernetes using kubectl.
+
+Continue to Module 3: Explore Your App to learn more about interacting with your deployed application and understanding its runtime environment.
