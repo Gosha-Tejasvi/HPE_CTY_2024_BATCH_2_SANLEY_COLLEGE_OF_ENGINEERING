@@ -9,47 +9,30 @@ In this module, we will deploy our first application on Kubernetes using `kubect
 
 ## Deploying Your First Application
 
-To deploy an application on Kubernetes, we use the `kubectl create deployment` command. This command creates a deployment object which manages a replica set to ensure the specified number of pod replicas are running at any given time.
+To deploy an application on Kubernetes, use the following command. Replace `<image>` with the full repository URL if the image is hosted outside Docker Hub.
 
-### Steps
-
-1. **Deploy the Application**
-
-   Use the following command to deploy an application. Replace `<image>` with the full repository URL if the image is hosted outside Docker Hub.
-
-   ```bash
-   kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
-
-    ```
- ```
-
+```copycode
+kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
 This command deploys the kubernetes-bootcamp application using the specified Docker image gcr.io/google-samples/kubernetes-bootcamp:v1.
 
 Verify Deployment
-
 After deploying, verify that the deployment was successful by checking the deployments:
 
- ```bash
+copycode
+Copy code
 kubectl get deployments
- ```
-
-You should see output confirming the deployment, including the number of replicas running.
-
-Explore Further
-
-Kubernetes automatically searches for a suitable node to run the application, schedules it, and configures the cluster for resilience (e.g., rescheduling on failure).
+This command will list all deployments in your Kubernetes cluster, showing information about the kubernetes-bootcamp deployment.
 
 Conclusion
-Congratulations! You've successfully deployed your first application on Kubernetes using kubectl. In the next module, we will explore how to interact with and manage your deployed application further.
+Congratulations! You've successfully deployed your first application on Kubernetes using kubectl. Continue to Module 3: Explore Your App to learn more about interacting with your deployed application and understanding its runtime environment.
 
-Continue to Module 3: Explore Your App to learn more about interacting with your deployed application and understanding its runtime environment.
+vbnet
+Copy code
 
+### Explanation:
 
+- **`copycode` Block**: By using ```copycode ... ```, you indicate to users that this block of code is meant to be copied and executed. This is a common convention in technical documentation to distinguish executable commands.
+- **Instructions**: Provide clear instructions before each code block to explain what the command does and any necessary context.
+- **Link to Next Module**: Always link to the next module or section to guide users through the tutorial sequentially.
 
-**Notes**:
-
-- Ensure to replace `<image>` in the deployment command with the actual Docker image repository URL if deploying an image from a different source than Docker Hub.
-- Provide clear and concise instructions for each step to guide users effectively through the deployment process.
-- Link to the next module (`module3.md`) to encourage users to proceed with the tutorial in a structured manner.
-
-By following this structure, users will be able to deploy their first application on Kubernetes and verify its deployment status using `kubectl`. This sets a foundation for further exploration and learning in subsequent modules.
+This format will help users understand how to deploy an application on Kubernetes using `kubectl` while maintaining clarity and ease of use in your documentation.
