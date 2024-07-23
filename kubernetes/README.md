@@ -9,7 +9,7 @@ Kubernetes is a powerful open-source platform for automating the deployment, sca
 ## Modules
 
 1. **Create a Kubernetes Cluster**
-   - Learn how to set up a Kubernetes cluster using [tool of choice].
+   - Learn how to set up a Kubernetes cluster .
 
 2. **Deploy an App**
    - Deploy a containerized application onto your Kubernetes cluster.
